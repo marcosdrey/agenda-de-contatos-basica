@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Agenda de Contatos</title>
+</head>
+<body>
+    <header>
+        <span ><a href="#" id="header_logo" target="_self">Contact+</a></span>
+
+        <div class="header_interativo">
+            <button type="button" class="esvaziar">
+                <!-- código lua cheia: <i class="fa-solid fa-moon"></i>" -->
+                <i class="fa-regular fa-sun"></i>
+            </button>
+            <button type="button" class="adicionar-contato">Adicionar Contato</button>
+        </div>
+    </header>
+    <main>
+        <h1 class="titulo-principal">O que deseja fazer?</h1>
+        <ul id="lista-de-opcoes">
+            <li class="item-da-lista"><button class="mostrar-contato">1 - Mostrar Contatos</button></li>
+            <li class="item-da-lista"><button class="adicionar-contato">2 - Adicionar Contato</button></li>
+            <li class="item-da-lista"><button class="mostrar-fav">3 - Mostrar Favoritos</button></li>
+        </ul>
+    <div class="form_div hidden">
+        <h3>Criar Contato <button onclick="fecharDiv('.form_div')">X</button></h3>
+        <form id="form">
+            <div class="contato-nome-div">
+                <label for="nome">Nome do Contato: </label>
+                <input type="text" name="nome" id="nome" placeholder="Ex: José Rodrigues" required>
+            </div>
+            <div class="contato-tel">
+                <label for="tel">Telefone-Celular:</label>
+                <input type="tel" name="tel" id="tel" placeholder="(xx)xxxxx-xxxx" required>
+            </div>
+            <div class="botoes-form">
+                <button type="submit" id="btn_criar_contato">Criar Contato</button>
+                <button type="reset" id="btn_limpar_contato">Limpar</button>
+            </div>
+        </form>
+    </div>
+    <div class="divisor">
+        <div class="display_infos hidden">
+            
+        </div>
+    </div>
+    </main>
+    <footer>
+        <p>Made by <a href="https://github.com/marcosdrey" rel="external" target="_blank">@marcosdrey</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

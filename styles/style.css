@@ -1,0 +1,313 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --corverdepadrao: #004643;
+    --corverdeescuro: #0C1618;
+    --corverdefraco: #D6F6DD;
+
+    --corcinzaescuro: #1c1c1d;
+    --corcinzapadrao: #57595b;
+    --corcinzaclaro: #878C8F;
+
+    --corbrancapadrao: #f0f0f0;
+
+    --fonteprincipal: "Work Sans", sans-serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--corcinzaescuro);
+    font-family: var(--fonteprincipal);
+}
+
+main {
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 70px;
+    padding: 0 25px;
+    background-color: var(--corverdepadrao);
+}
+
+main {
+    margin-top: 150px;
+}
+
+a#header_logo {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--corbrancapadrao);
+    text-decoration: none;
+}
+.header_interativo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.header_interativo .esvaziar {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.header_interativo .esvaziar i {
+    font-size: 1.5rem;
+    color: var(--corbrancapadrao);
+}
+
+.header_interativo .adicionar-contato {
+    padding: 10px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: var(--corbrancapadrao);
+    color: var(--corverdepadrao);
+}
+
+.header_interativo .adicionar-contato:hover {
+    background-color: var(--corverdeescuro);
+    color: var(--corbrancapadrao);
+}
+
+.titulo-principal {
+    max-width: 650px;
+    margin: 55px auto 0;
+    text-align: center;
+    height: 100px;
+    font-size: 3.5rem;
+    color: var(--corcinzaclaro);
+    transition: all .4s ease;
+    cursor: help;
+}
+
+#lista-de-opcoes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 15px;
+}
+
+#lista-de-opcoes li {
+    list-style: none;
+}
+
+#lista-de-opcoes .item-da-lista button, form#form .botoes-form button {
+    padding: 20px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    transition: all .3s ease;
+    background-color: var(--corverdeescuro);
+    color: var(--corbrancapadrao);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+#lista-de-opcoes .item-da-lista button:hover {
+    background-color: var(--corbrancapadrao);
+    color: var(--corverdeescuro);
+}
+
+.titulo-principal:hover {
+    font-size: 4rem;
+}
+  
+.display_infos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: 50px auto 50px;
+    color: var(--corbrancapadrao);
+    max-width: 1200px;
+    text-align: justify;
+}
+
+footer {
+    
+    padding: 15px;
+    background-color: var(--corverdepadrao);
+    width: 100%;
+    text-align: center;
+    color: var(--corbrancapadrao);
+}
+
+footer a {
+    color: var(--corbrancapadrao);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.card-contato {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    align-items: center;
+    background-color: var(--corcinzapadrao);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.card-contato .card-contato_foto {
+    width: 100px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+.card-contato .card-contato_nome {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-contato .card-contato_tel {
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+.card-contato .card-contato_fav {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.botao-inativo {
+    background-color: var(--corbrancapadrao);
+    color: var(--corverdeescuro);
+}
+
+.card-contato .card-contato_fav:hover {
+    background-color: var(--corverdeescuro);
+}
+
+.card-contato .card-contato_fav:hover i {
+    color: var(--corbrancapadrao);
+}
+
+.card-contato .card-contato_fav i {
+    font-size: 1rem;
+}
+
+.botao-ativo {
+    background-color: var(--corverdeescuro);
+    color: var(--corbrancapadrao);
+}
+
+.form_div {
+    max-width: 1200px;
+    margin: 50px auto;
+    background-color: var(--corcinzapadrao);
+    padding: 25px;
+    border-radius: 25px;
+}
+
+.form_div h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: var(--corverdeescuro);
+}
+
+.form_div h3 button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    float: right;
+    cursor: pointer;
+}
+
+form#form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form#form div {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+
+form#form label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--corverdeescuro);
+}
+
+form#form input {
+    padding: 8px;
+    font-size: 1rem;
+}
+
+form#form .botoes-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+form#form .botoes-form button {
+    font-size: 1rem;
+    padding: 12px;
+}
+
+.hidden {
+    display: none;
+}
+
+.card-contato-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.card-contato_edit, .card-contato_trash {
+    padding: 8px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    color: var(--corverdeescuro);
+}
+
+.card-contato_edit i, .card-contato_trash i {
+    font-size: 1rem;
+}
+
+.card-contato_edit:hover {
+    background-color: blue;
+    color: var(--corbrancapadrao);
+}
+
+.card-contato_trash:hover {
+    background-color: red;
+    color: var(--corbrancapadrao);
+}
